@@ -15,7 +15,7 @@ from langchain_core.documents import Document
 import chromadb
 import os
 from dotenv import load_dotenv
-
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 # Disable file watcher for PyTorch compatibility
 os.environ["STREAMLIT_SERVER_FILE_WATCHER_TYPE"] = "none"
 
